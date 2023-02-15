@@ -1,30 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
 import {NavLink, Link} from "react-router-dom";
-import {IoHome} from "react-icons/io5"
+import {IoHome, IoMenu} from "react-icons/io5"
 import {BsInfoCircleFill} from "react-icons/bs"
 import {AiFillMail} from "react-icons/ai"
 import {MdWork} from "react-icons/md"
+import {TfiClose} from "react-icons/tfi"
 
 function Header(){
-    const navClass = "ds-tab ds-tab-bordered"
-    const activeNavClass = "ds-tab ds-tab-bordered ds-tab-active"
+    const [menuToggle, setMenuToggle] = useState(false)
+    const navClass = "tab md:tab-bordered"
+    const activeNavClass = "tab md:tab-bordered tab-active"
+    const hideMenu = "md:inline hidden"
     return (
         <header>
-            <div className="flex justify-between content-center p-2 px-5 lg:px-32 lg:p-3.5 bg-emerald-900 text-lg">
-                <div>
-                    <Link to="/" className="text-white font-bold">
-                        Baldazi
-                    </Link>
-                </div>
+            <div className="flex md:justify-between content-between md:content-end pt-2 px-5 lg:px-32  bg-emerald-900 text-lg">
+                    <div className="">
+                         <Link to="/" className="text-gray-300 hover:text-white" onClick={e =>setMenuToggle(false)}>
+                            <IoHome size={32} className="md:hidden"/>
+                            <span className="font-bold hidden md:inline">Baldazi</span>
+                        </Link>
+                    </div>
 
-                <nav>
-                    <ul className="ds-tabs">
-                        <li><NavLink to="/" className={({isActive})=>isActive?activeNavClass:navClass}><IoHome className="mr-1"/>Accueil</NavLink></li> 
-                        <li><NavLink to="/projects" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Projets</NavLink></li> 
-                        <li><NavLink to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>A propos</NavLink></li> 
-                        <li><NavLink to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>Contact</NavLink></li> 
-                    </ul>
-                </nav>
+                    <div className="w-full md:w-auto md:block">
+                        <div class="flex justify-end">
+                            <button className="text-gray-300 md:hidden" onClick={e => setMenuToggle(!menuToggle)}>{menuToggle?<TfiClose size={28}/>:<IoMenu size={40}/>}</button>
+                        </div>
+
+                        <nav className={!menuToggle?hideMenu:undefined}>
+                            <ul className="md:tabs md:mx-0">
+                                <li className="hidden md:inline"><NavLink to="/" className={({isActive})=>isActive?activeNavClass:navClass}><IoHome className="mr-1"/>Accueil</NavLink></li> 
+                                <li className="text-center"><NavLink to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Projets</NavLink></li> 
+                                <li className="text-center"><NavLink to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>A propos</NavLink></li> 
+                                <li className="text-center "><NavLink to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>Contact</NavLink></li> 
+                            </ul>
+                        </nav>
+                </div>
             </div>
         </header>
     )
