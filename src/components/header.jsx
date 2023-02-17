@@ -22,7 +22,7 @@ function Header(){
                     </div>
 
                     <div className="w-full md:w-auto md:block">
-                        <div class="flex justify-end">
+                        <div className="flex justify-end">
                             <button className="text-gray-300 md:hidden" onClick={e => setMenuToggle(!menuToggle)}>{menuToggle?<TfiClose size={28}/>:<IoMenu size={40}/>}</button>
                         </div>
 
