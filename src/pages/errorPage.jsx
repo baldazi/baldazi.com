@@ -2,7 +2,7 @@ import React from "react";
 import { RiArrowGoBackFill } from 'react-icons/ri';
 import { Link } from "react-router-dom";
 
-function NotFound(){
+function ErrorPage(){
     return (
         <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center rounded p-5 shadow-2xl">
@@ -20,4 +20,4 @@ function NotFound(){
     )
 }
 
-export default NotFound;
+export default ErrorPage;
