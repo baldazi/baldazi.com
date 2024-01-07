@@ -29,8 +29,8 @@ function Header(){
                         <nav className={!menuToggle?hideMenu:undefined}>
                             <ul className="md:tabs md:mx-0">
                                 <li className="hidden md:inline"><NavLink to="/" className={({isActive})=>isActive?activeNavClass:navClass}><IoHome className="mr-1"/>Home</NavLink></li> 
-                                <li className="text-center"><NavLink to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Projets</NavLink></li> 
-                                <li className="text-center"><NavLink to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>A propos</NavLink></li> 
+                                <li className="text-center"><NavLink to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Project</NavLink></li> 
+                                <li className="text-center"><NavLink to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>About</NavLink></li> 
                                 <li className="text-center "><NavLink to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>Contact</NavLink></li> 
                             </ul>
                         </nav>
