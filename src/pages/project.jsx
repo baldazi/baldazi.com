@@ -17,7 +17,7 @@ function Projet() {
                         <p>Application Mobile Android</p>
                     </div>
                 </div>
-                {/* conflistik card */}
+                {/* stage card */}
                 <div className="border rounded-md shadow md:w-96 relative mx-5 hover:-translate-y-1 shadow-gray-400">
                     {/* header */}
                     <h3 className="absolute -translate-y-1/2 left-1/2 -translate-x-1/2 border bg-violet-900 text-white italic rounded-md px-1">Stage</h3>
@@ -28,6 +28,19 @@ function Projet() {
                         </div>
                         
                         <p>Application Mobile Android</p>
+                    </div>
+                </div>
+                {/* stage card */}
+                <div className="border rounded-md shadow md:w-96 relative mx-5 hover:-translate-y-1 shadow-gray-400">
+                    {/* header */}
+                    <h3 className="absolute -translate-y-1/2 left-1/2 -translate-x-1/2 border bg-violet-900 text-white italic rounded-md px-1">Stage</h3>
+                    {/* body */}
+                    <div className="p-2">
+                        <div className="flex justify-center gap-1">
+                            <MdSchool size={32}/>
+                        </div>
+                        
+                        <p>Application Web</p>
                     </div>
                 </div>
                 
