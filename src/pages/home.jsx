@@ -1,5 +1,6 @@
 import React from 'react';
 import {FiExternalLink} from 'react-icons/fi'
+import { GiBoxingGloveSurprise } from "react-icons/gi";
 import monCv from '../assets/cv.pdf'
 
 function Home() {
@@ -7,19 +8,19 @@ function Home() {
         <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center">
             <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Bienvenue !</h1>
+            <h1 className="text-5xl font-bold">Hooray !</h1>
             <p className="pt-6 pb-2">
-                Bonjour, je m'appelle Abdoul Aziz BALDE et je suis en fin de cycle de licence en informatique à <a rel="noreferrer" href="https://www.univ-smb.fr/" target="_blank" className="link link-info">l'Université de Savoie (USMB) <FiExternalLink className="inline"/></a>. 
-                Ma passion pour l'informatique a été renforcée par la conviction que les médias virtuels ont transformé 
-                de manière significative notre façon de vivre, de travailler et de communiquer, 
-                et j'ai choisi de poursuivre une carrière dans l'informatique pour être un acteur de cette évolution. 
+            Hello, I am <b>Aziz BALDE</b> and I am currently doing a master 1 in computer science at the 
+            <a rel="noreferrer" href="https://ufr-st.univ-lehavre.fr/" target="_blank" className="link link-info block">university le havre normandie (ULHN)</a>
+            My passion for IT has been reinforced by the belief that virtual media has significantly transformed the way we live, work and communicate,
+            and I chose to pursue a career in IT to be an actor in this evolution.
             </p>
             <p className="pb-6 italic text-accent">
-                    Sur cet site, je partagerai les projets auxquels je travaille pendant mon temps libre,
-                    ainsi que ceux que je réalise dans le cadre de mes études. 
+                    On this site, I will share the projects I work on in my free time,
+                    as well as those I carry out as part of my studies.
             </p>
                 {/* The button to open modal */}
-                <label htmlFor="modal-cv" className="btn">mon CV</label>
+                <label htmlFor="modal-cv" className="btn">Surprise <GiBoxingGloveSurprise /></label>
 
                 {/* Put this part before </body> tag */}
                 <input type="checkbox" id="modal-cv" className="modal-toggle" />
