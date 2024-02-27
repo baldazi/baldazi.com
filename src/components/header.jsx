@@ -8,8 +8,8 @@ import {TfiClose} from "react-icons/tfi"
 
 function Header(){
     const [menuToggle, setMenuToggle] = useState(false)
-    const navClass = "tab md:tab-bordered"
-    const activeNavClass = "tab md:tab-bordered tab-active"
+    const navClass = "md:tab"
+    const activeNavClass = "md:tab tab-active"
     const hideMenu = "md:inline hidden"
     return (
         <header>
@@ -21,18 +21,18 @@ function Header(){
                         </Link>
                     </div>
 
-                    <div className="w-full md:w-auto md:block">
+                    <div className="w-full md:w-auto md:flex">
                         <div className="flex justify-end">
                             <button className="text-gray-300 md:hidden" onClick={e => setMenuToggle(!menuToggle)}>{menuToggle?<TfiClose size={28}/>:<IoMenu size={40}/>}</button>
                         </div>
 
                         <nav className={!menuToggle?hideMenu:undefined}>
-                            <ul className="md:tabs md:mx-0">
-                                <li className="hidden md:inline"><NavLink to="/" className={({isActive})=>isActive?activeNavClass:navClass}><IoHome className="mr-1"/>Home</NavLink></li> 
-                                <li className="text-center"><NavLink to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Project</NavLink></li> 
-                                <li className="text-center"><NavLink to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>About</NavLink></li> 
-                                <li className="text-center "><NavLink to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>Contact</NavLink></li> 
-                            </ul>
+                            <div className="md:tabs md:mx-0 md:tabs-bordered" role="tablist">
+                                <NavLink role="tab" to="/" className={({isActive})=>(isActive?activeNavClass:navClass)}><IoHome className="mr-1"/>Home</NavLink>
+                                <NavLink role="tab" to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Project</NavLink>
+                                <NavLink role="tab" to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>About</NavLink>
+                                <NavLink role="tab" to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>Contact</NavLink>
+                            </div>
                         </nav>
                 </div>
             </div>
