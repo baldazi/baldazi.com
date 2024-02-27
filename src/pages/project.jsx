@@ -1,15 +1,16 @@
 import React from 'react';
-import { MdSchool } from "react-icons/md";
 import ProjectCard from '../components/projectCard';
+import conflistikImg from '../assets/img/conflistik.png';
 function Projet() {
     return (
-        <div className="hero min-h-screen bg-base-300">
-            <div className="flex content-between items-center justify-center flex-wrap gap-3 text-center">
-                {/* conflistik card */}
-                <ProjectCard/>
-                {/* stage card */}
-                
-                {/* stage card */}               
+        <div className="min-h-screen">
+            <div className="">
+            <div className="divider divider-primary divider-start"><span className="badge badge-lg badge-primary">Mobile App</span></div>
+                <div className="">
+                    {/* conflistik card */}
+                    <ProjectCard title="Conflistik" description="" image={conflistikImg}/>
+                    {/* stage card */}
+                </div>            
             </div>
         </div>
     );
