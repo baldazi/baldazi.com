@@ -8,8 +8,8 @@ import {TfiClose} from "react-icons/tfi"
 
 function Header(){
     const [menuToggle, setMenuToggle] = useState(false)
-    const navClass = "md:tab"
-    const activeNavClass = "md:tab tab-active"
+    const navClass = "tab"
+    const activeNavClass = "tab tab-active"
     const hideMenu = "md:inline hidden"
     return (
         <header>
@@ -27,8 +27,8 @@ function Header(){
                         </div>
 
                         <nav className={!menuToggle?hideMenu:undefined}>
-                            <div className="md:tabs md:mx-0 md:tabs-bordered" role="tablist">
-                                <NavLink role="tab" to="/" className={({isActive})=>(isActive?activeNavClass:navClass)}><IoHome className="mr-1"/>Home</NavLink>
+                            <div className="tabs md:mx-0 tabs-bordered" role="tablist">
+                                <NavLink role="tab" to="/" className={({isActive})=>(isActive?activeNavClass:navClass)+" hidden md:inline-flex"}><IoHome className="mr-1"/>Home</NavLink>
                                 <NavLink role="tab" to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Project</NavLink>
                                 <NavLink role="tab" to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>About</NavLink>
                                 <NavLink role="tab" to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>Contact</NavLink>
