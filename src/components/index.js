@@ -1,2 +1,5 @@
 export {default as Header} from './header'
 export {default as Footer} from './footer'
+export {default as ProjectCard} from './projectCard'
+export {default as AboutTimeline} from './aboutTimeline'
+export {default as AboutCard} from './aboutCard'

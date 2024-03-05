@@ -8,9 +8,14 @@ export default function ProjectCard(props){
         <h2 className="card-title">{props.title}</h2>
         <p>{props.description}</p>
         {props.children}
-    {/*  <div className="card-actions justify-end">
+        {/*  <div className="card-actions justify-end">
         <button className="btn btn-primary">Buy Now</button>
         </div> */}
+        {props.usages &&
+        <div className="flex">
+            {props.usages.map(it => <div className={it.type}>{it.text}</div>)}
+        </div>
+        }
   </div>
 </div>)
 }

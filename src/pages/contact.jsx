@@ -34,7 +34,7 @@ function Contact() {
         }else{
             emailjs.sendForm('service_7gv5nm1', 'template_xb4chge', form.current, 'F-m0ekkLox8ALPA8Y')
             .then(() => {
-                toast.success(`🦄 message reçu!`, {
+                toast.success(`🦄 message received!`, {
                     position: "top-right",
                     autoClose: 6000,
                     hideProgressBar: false,
@@ -44,16 +44,6 @@ function Contact() {
                     progress: undefined,
                     theme: "dark",
                     });
-                    toast.info(`n'abusez pas du formulaire car le nombre de message est limité`, {
-                        position: "top-right",
-                        autoClose: false,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "dark",
-                        });
             }, (error) => {
                 console.log(error.text);
             });
@@ -68,13 +58,15 @@ function Contact() {
         <ToastContainer />
             <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Ecrivez-moi un message!</h1>
+                        <h1 className="text-5xl font-bold">Send me a message!</h1>
                         <p className="py-6 md:w-72">
-                            Si vous souhaitez me contacter pour une quelconque raison, que ce soit pour discuter de collaborations professionnelles ou pour simplement me dire bonjour, n'hésitez pas de m'envoyer un message sur l'addresse mail 
+                            If you would like to contact me for any reason, 
+                            whether to discuss business collaborations or just to say hello, 
+                            don't hesitate to send me a message at the following e-mail address
                             <br/><a href="mailto:contact@baldazi.com" className="mx-1 link link-success italic"><FiMail className="inline"/> contact@baldazi.com</a> 
-                            ou à utiliser le formulaire de contact ci-dessous.
-
-                            Je m'efforce de répondre à tous les messages dans les plus brefs délais, alors veuillez m'excuser si je ne réponds pas immédiatement.
+                            or use the contact form below. 
+                            I try to answer all messages as soon as possible, 
+                            so please forgive me if I don't respond immediately.
                         </p>
                     </div>
                     
@@ -82,23 +74,23 @@ function Contact() {
                     <form className="card-body" onSubmit={e => handleMsgSubmit(e)} ref={form}>
                         <div className="form-control">
                             {/* email */}
-                            <input type="email" placeholder="email" className="input input-bordered focus:outline-emerald-400" value={email} onChange={e => setEmail(e.target.value)} name="sender"/>
+                            <input type="email" placeholder="Email" className="input input-bordered focus:outline-emerald-400" value={email} onChange={e => setEmail(e.target.value)} name="sender"/>
                         </div>
 
                         <div className="form-control">
                             {/* subject */}
-                            <input type="text" placeholder="Sujet" className="input input-bordered focus:outline-emerald-400" value={subject} onChange={e => setSubject(e.target.value)} name="subject"/>
+                            <input type="text" placeholder="Subject" className="input input-bordered focus:outline-emerald-400" value={subject} onChange={e => setSubject(e.target.value)} name="subject"/>
                         </div>
 
                         <div className="form-control">
                             {/** content */}
-                            <textarea type="text" placeholder="entrez votre message ici..." className="input input-bordered focus:outline-emerald-400 h-24" value={body} onChange={e => setBody(e.target.value)} name="message"></textarea>
+                            <textarea type="text" placeholder="Enter your message here..." className="input input-bordered focus:outline-emerald-400 h-24" value={body} onChange={e => setBody(e.target.value)} name="message"></textarea>
                         </div>
                         <span className={body.length > 10?"hidden":"text-end"}>
                                 {body.length}/10 min
                         </span>
                         <div className="form-control mt-0.5">
-                            <button className="btn hover:text-white bg-emerald-800 border-emerald-900 hover:bg-emerald-400" type="submit">Envoyer</button>
+                            <button className="btn hover:text-white bg-emerald-800 border-emerald-900 hover:bg-emerald-400" type="submit">Send</button>
                         </div>
                     </form>
                 </div>
