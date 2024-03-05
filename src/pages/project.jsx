@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from '../components/projectCard';
+import {ProjectCard} from '../components';
 import conflistikImg from '../assets/img/conflistik.png';
 import stageImg from '../assets/img/stage.png';
 import networkImg from '../assets/img/network.png';
