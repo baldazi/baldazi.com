@@ -20,7 +20,7 @@ function Home() {
                     as well as those I carry out as part of my studies.
             </p>
                 {/* The button to open modal */}
-                <label htmlFor="modal-cv" className="btn">Surprise <GiBoxingGloveSurprise /></label>
+                <label htmlFor="modal-cv" className="btn">Resume <GiBoxingGloveSurprise /></label>
 
                 {/* Put this part before </body> tag */}
                 <input type="checkbox" id="modal-cv" className="modal-toggle" />
@@ -28,7 +28,7 @@ function Home() {
                 <div className="modal-box md:h-96 overflow-clip md:pb-9">
                     <label htmlFor="modal-cv" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <embed src={monCv+"#toolbar=0&navpanes=0&scrollbar=0"} type="application/pdf" className="md:w-full md:h-full rounded-md shadow overflow-y-clip"/>
-                    <h3 className="text-lg font-bold">Apperçu de mon CV</h3>
+                    <h3 className="text-lg font-bold">Overview of my resume</h3>
                 </div>
                 </div>
             </div>
