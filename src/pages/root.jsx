@@ -1,6 +1,5 @@
-import React from 'react';
 import { Footer, Header } from '../components';
-import { Outlet } from 'react-router-dom/dist';
+import { Outlet } from 'react-router';
 
 
 function Root() {

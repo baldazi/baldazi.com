@@ -1,6 +1,5 @@
-import React from "react";
 import { RiArrowGoBackFill } from 'react-icons/ri';
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 function ErrorPage(){
     return (

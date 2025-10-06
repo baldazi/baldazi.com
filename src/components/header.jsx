@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {NavLink, Link} from "react-router-dom";
+import {NavLink, Link} from "react-router";
 import {IoHome, IoMenu} from "react-icons/io5"
 import {BsInfoCircleFill} from "react-icons/bs"
 import {AiFillMail} from "react-icons/ai"
