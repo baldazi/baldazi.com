@@ -6,6 +6,7 @@ import {AiFillMail} from "react-icons/ai"
 import {MdWork} from "react-icons/md"
 import {TfiClose} from "react-icons/tfi"
 import LangSelector from "./langSelector";
+import { m } from "../paraglide/messages";
 
 function Header(){
     const [menuToggle, setMenuToggle] = useState(false)
@@ -29,10 +30,10 @@ function Header(){
 
                         <nav className={!menuToggle?hideMenu:undefined}>
                             <div className="tabs md:mx-0 tabs-bordered" role="tablist">
-                                <NavLink role="tab" to="/" className={({isActive})=>(isActive?activeNavClass:navClass)+" hidden md:inline-flex"}><IoHome className="mr-1"/>Home</NavLink>
-                                <NavLink role="tab" to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>Project</NavLink>
-                                <NavLink role="tab" to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>About</NavLink>
-                                <NavLink role="tab" to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>Contact</NavLink>
+                                <NavLink role="tab" to="/" className={({isActive})=>(isActive?activeNavClass:navClass)+" hidden md:inline-flex"}><IoHome className="mr-1"/>{m["navigation.home"]()}</NavLink>
+                                <NavLink role="tab" to="/project" className={({isActive})=>isActive?activeNavClass:navClass}><MdWork className="mr-1"/>{m["navigation.project"]()}</NavLink>
+                                <NavLink role="tab" to="/about" className={({isActive})=>isActive?activeNavClass:navClass}><BsInfoCircleFill className="mr-1"/>{m["navigation.about"]()}</NavLink>
+                                <NavLink role="tab" to="/contact" className={({isActive})=>isActive?activeNavClass:navClass}><AiFillMail className="mr-1"/>{m["navigation.contact"]()}</NavLink>
                             </div>
                         </nav>
                 </div>

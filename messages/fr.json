@@ -1,4 +1,25 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
-  "greeting": "Salut {username}"
+  "greeting": "Salut {username}",
+
+  "navigation":{
+    "home": "Accueil",
+    "project": "Poject",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+
+  "page": {
+		"home" : {
+      "hooray": "Hourra !",
+      "aboutFrame1": " Bonjour, Je suis ",
+      "aboutFrame2" : " et je suis ",
+      "aboutFrame3" : " diplômé d’un Master en Informatique ",
+      "aboutFrame4" : " à l’",
+      "aboutFrame5": " Université Le Havre Normandie (ULHN) ",
+      "aboutFrame6": "Ma passion pour l'informatique découle de ma conviction que les technologies numériques ne cessent de transformer notre manière de vivre, de travailler et de communiquer. C’est pour ça que j’ai choisi d’en faire mon métier, pour participer à cette transformation.",
+      "aboutFrame7": "Sur ce site, je partagerai les projets sur lesquels je travaille pendant mon temps libre, ainsi que ceux réalisés dans le cadre de mes études.",
+      "resume": "Mon CV"
+		}
+	}
 }
