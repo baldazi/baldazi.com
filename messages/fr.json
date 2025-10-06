@@ -20,6 +20,14 @@
       "aboutFrame6": "Ma passion pour l'informatique découle de ma conviction que les technologies numériques ne cessent de transformer notre manière de vivre, de travailler et de communiquer. C’est pour ça que j’ai choisi d’en faire mon métier, pour participer à cette transformation.",
       "aboutFrame7": "Sur ce site, je partagerai les projets sur lesquels je travaille pendant mon temps libre, ainsi que ceux réalisés dans le cadre de mes études.",
       "resume": "Mon CV"
-		}
+		},
+
+    "project":{
+      "mobileGroup": "Application Mobile",
+      "conflisticDesc": "Ce projet consistait à développer une application mobile, plus précisément un jeu sérieux, basé sur la construction d’entrepôts dans une ville. Les participants devaient voter pour les emplacements des entrepôts, en défendant leurs intérêts selon la position dans la ville. L’application prenait en charge un système multi-utilisateur, où chaque personne jouait sur son propre appareil.",
+      "internshipTitle": "Recherche de Stage",
+      "internshipMobileDesc" : "Cette application mobile développée en collaboration vise à faciliter le processus de candidature aux offres de stage. Elle consomme une API REST développée et déployée sur Heroku, permettant aux utilisateurs de rechercher et de postuler à des annonces de stage. Son objectif est de simplifier la recherche et la candidature aux stages.",
+      "internshipWebAppDesc": "L’application web, imposée par l’école, a inspiré la version mobile même si les deux n’ont pas été développées ensemble. Elle permet de rechercher et de postuler à des offres de stage en ligne. Elle propose une interface simple pour filtrer les annonces, gérer son profil et accéder à des ressources utiles pour les candidats."
+    }
 	}
 }

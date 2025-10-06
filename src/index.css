@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@layer base{
+@layer bases {
     body{
         font-family: 'Lato', sans-serif;
     }

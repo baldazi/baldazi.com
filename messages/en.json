@@ -18,6 +18,15 @@
       "aboutFrame6": "My passion for IT comes from the belief that digital technology continues to transform the way we live, work, and communicate,and I chose to pursue a career in IT to be an actor in this evolution.",
       "aboutFrame7": "On this site, I will share the projects I work on in my free time, as well as those I carry out as part of my studies.",
       "resume": "Resume"
+    },
+    
+    "project":{
+      "mobileGroup": "Mobile Application",
+      "conflisticDesc": "This project involved developing a mobile application, specifically a serious game, based on the construction of warehouses in a city. Participants were required to vote for the warehouse locations, advocating for their interests regarding the city's positioning. The application supported a multi-user system where each person played on their own device.",
+      "internshipTitle": "Internship Finder",
+      "internshipMobileDesc" : "This mobile application developed in collaboration aims to facilitate the application process for internship opportunities. It consumes a REST API developed and deployed on Heroku, enabling users to search for and apply to internship listings. Its goal is to streamline the internship search and application process.",
+      "internshipWebAppDesc": "The web application that inspired the mobile version was imposed by the school, and there was no connection between their development. It was designed to help users search and apply for internships online. The platform allows users to browse, filter, and apply to internship offers, and includes features like profile management and access to useful resources."
+
     }
   }
 }
