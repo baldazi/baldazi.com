@@ -1,19 +1,20 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import {NavLink, Link} from "react-router";
 import {IoHome, IoMenu} from "react-icons/io5"
 import {BsInfoCircleFill} from "react-icons/bs"
 import {AiFillMail} from "react-icons/ai"
 import {MdWork} from "react-icons/md"
 import {TfiClose} from "react-icons/tfi"
+import LangSelector from "./langSelector";
 
 function Header(){
     const [menuToggle, setMenuToggle] = useState(false)
     const navClass = "tab"
-    const activeNavClass = "tab tab-active"
+    const activeNavClass = "tab tab-active border-b-1  border-gray-300"
     const hideMenu = "md:inline hidden"
     return (
         <header>
-            <div className="flex md:justify-between content-between md:content-end pt-2 px-5 lg:px-32  bg-emerald-900 text-lg">
+            <div className="flex md:justify-between justify-between items-center pt-2 px-5 lg:px-32  bg-emerald-900 text-lg">
                     <div className="">
                          <Link to="/" className="text-gray-300 hover:text-white" onClick={e =>setMenuToggle(false)}>
                             <IoHome size={32} className="md:hidden"/>
@@ -35,6 +36,10 @@ function Header(){
                             </div>
                         </nav>
                 </div>
+
+                        <div className="flex items-center">
+                            <LangSelector/>
+                        </div>
             </div>
         </header>
     )

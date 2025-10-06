@@ -1,6 +1,5 @@
-import React from 'react';
-import {FiExternalLink} from 'react-icons/fi'
 import { GiBoxingGloveSurprise } from "react-icons/gi";
+import { m } from "../paraglide/messages.js";
 import monCv from '../assets/cv.pdf'
 
 function Home() {
@@ -8,7 +7,7 @@ function Home() {
         <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center">
             <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Hooray !</h1>
+            <h1 className="text-5xl font-bold">Hooray ! {m.greeting({ name: "Samuel" })}</h1>
             <p className="pt-6 pb-2">
             Hello, I am <b>Aziz BALDE</b> and I am currently doing a master 1 in computer science at the 
             <a rel="noreferrer" href="https://ufr-st.univ-lehavre.fr/" target="_blank" className="link link-info block">university le havre normandie (ULHN)</a>

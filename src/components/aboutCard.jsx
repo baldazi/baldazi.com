@@ -1,4 +1,3 @@
-import React from "react";
 import AboutTimeline from "./aboutTimeline";
 
 export default function AboutCard(props){

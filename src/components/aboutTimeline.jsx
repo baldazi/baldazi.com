@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function AboutTimeline(props){
     return(
         <ul className="timeline timeline-vertical">
