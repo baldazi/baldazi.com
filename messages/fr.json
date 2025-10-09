@@ -28,6 +28,21 @@
       "internshipTitle": "Recherche de Stage",
       "internshipMobileDesc" : "Cette application mobile développée en collaboration vise à faciliter le processus de candidature aux offres de stage. Elle consomme une API REST développée et déployée sur Heroku, permettant aux utilisateurs de rechercher et de postuler à des annonces de stage. Son objectif est de simplifier la recherche et la candidature aux stages.",
       "internshipWebAppDesc": "L’application web, imposée par l’école, a inspiré la version mobile même si les deux n’ont pas été développées ensemble. Elle permet de rechercher et de postuler à des offres de stage en ligne. Elle propose une interface simple pour filtrer les annonces, gérer son profil et accéder à des ressources utiles pour les candidats."
+    },
+
+    "about": {
+      "bioFrame1": "Je suis ",
+      "bioFrame2": ", développeur passionné par la conception de logiciels fiables, performants et bien structurés. Ce qui me motive, c’est de comprendre en profondeur comment les systèmes fonctionnent et de transformer cette compréhension en solutions simples, efficaces et durables.",
+      "educationDesc": "Mon parcours universitaire diversifié m’a permis de travailler sur plusieurs types de projets — du développement web à des applications plus techniques — tout en apprenant à faire des choix réfléchis, discuter d’aspects techniques variés et collaborer efficacement avec d’autres profils. Ces expériences m’ont aidé à développer une approche pragmatique du développement : comprendre avant d’agir, structurer avant de coder.",
+      "experience": "Lors de mon stage de six mois chez ITESOFT, j’ai travaillé en tant qu’ingénieur QA, où j’ai découvert une autre facette essentielle du métier : les tests logiciels et l’assurance qualité. J’y ai appris à automatiser, analyser et valider les fonctionnalités avec rigueur, en gardant toujours en tête la fiabilité du produit final.",
+      "techWatch": "Je consacre également du temps à une veille technologique régulière, principalement autour de React et Svelte, deux frameworks que j’explore en profondeur. J’envisage aussi de me plonger dans Angular et Vue, même si mes deux principaux axes d’apprentissage actuels me demandent déjà beaucoup d’investissement.",
+      "goal": "Je suis à la recherche d’une nouvelle opportunité qui me permettrait de continuer à apprendre, à relever des défis techniques et à contribuer à des projets où la qualité et la rigueur ont toute leur place.",
+      "interests": "En dehors du code, j’aime lire, découvrir de nouvelles approches en ingénierie logicielle et échanger avec d’autres passionnés.",
+      "educationTitle": "Formation",
+      "skillsTitle": "Competences",
+      "educationCPGE": "Prepa MPSI/MP - INPHB - Yamoussokro(Ivory Cost)",
+      "educationBsc": "Licence - Informatique - USMB(Université Savoie Mont-Blanc)",
+      "educationMsc": "MSc - Informatique - ULHN(Université Le Havre Normandie)"
     }
 	}
 }

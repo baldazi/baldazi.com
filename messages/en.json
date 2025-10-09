@@ -27,6 +27,21 @@
       "internshipMobileDesc" : "This mobile application developed in collaboration aims to facilitate the application process for internship opportunities. It consumes a REST API developed and deployed on Heroku, enabling users to search for and apply to internship listings. Its goal is to streamline the internship search and application process.",
       "internshipWebAppDesc": "The web application that inspired the mobile version was imposed by the school, and there was no connection between their development. It was designed to help users search and apply for internships online. The platform allows users to browse, filter, and apply to internship offers, and includes features like profile management and access to useful resources."
 
+    },
+
+    "about": {
+      "bioFrame1": "I’m ",
+      "bioFrame2": ", a developer passionate about building reliable, efficient, and well-structured software. What drives me is understanding how systems work and turning that understanding into simple, effective, and sustainable solutions.",
+      "educationDesc": "My diverse academic background has allowed me to work on a wide range of projects — from web applications to more technical systems — while learning to make informed choices, discuss various technical aspects, and collaborate effectively with different teams. These experiences have shaped a pragmatic approach to development: understand first, structure next, then build.",
+      "experience": "During my six-month internship at ITESOFT, I worked as a QA Engineer, where I discovered another crucial side of software development: testing and quality assurance. I learned to automate, analyze, and validate features with precision — always keeping reliability in mind.",
+      "techWatch": "I dedicate time to continuous tech watch, mainly around React and Svelte, two frameworks I’m deeply exploring. I plan to dive into Angular and Vue as well, although the first two already take a big part of my focus.",
+      "goal": "I’m looking for a new opportunity — a role where I can keep learning, tackle meaningful technical challenges, and contribute to projects that value precision and quality.",
+      "interests": "Outside of coding, I enjoy reading, exploring new software engineering ideas, and connecting with other developers who share the same passion.",
+      "educationTitle": "Education",
+      "skillsTitle": "Skills",
+      "educationCPGE": "Prepa MPSI/MP - INPHB - Yamoussokro(Ivory Cost)",
+      "educationBsc": "BSc - Computer Sc - USMB - Savoie(France)",
+      "educationMsc": "MSc - Computer Sc - ULHN - Le Havre(France)"
     }
   }
 }

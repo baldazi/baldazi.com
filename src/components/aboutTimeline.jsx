@@ -1,7 +1,7 @@
-export default function AboutTimeline(props){
+export default function AboutTimeline({content}){
     return(
         <ul className="timeline timeline-vertical">
-        {props.contents && props.contents.map(it =>
+        {content && content.map(it =>
             <li>
                 <div className="timeline-start">{it.title}</div>
                 <div className="timeline-middle">
