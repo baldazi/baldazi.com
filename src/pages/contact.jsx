@@ -1,6 +1,7 @@
-import React, {useState, useRef} from 'react';
+import {useState, useRef} from 'react';
 import {FiMail} from 'react-icons/fi';
 import emailjs from '@emailjs/browser';
+import {m} from "../paraglide/messages"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -58,15 +59,11 @@ function Contact() {
         <ToastContainer />
             <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Send me a message!</h1>
+                        <h1 className="text-5xl font-bold">{m["page.contact.reachMeTitle"]()}</h1>
                         <p className="py-6 md:w-72">
-                            If you would like to contact me for any reason, 
-                            whether to discuss business collaborations or just to say hello, 
-                            don't hesitate to send me a message at the following e-mail address
+                            {m["page.contact.reachMeTitleDesc1"]()}
                             <br/><a href="mailto:contact@baldazi.com" className="mx-1 link link-success italic"><FiMail className="inline"/> contact@baldazi.com</a> 
-                            or use the contact form below. 
-                            I try to answer all messages as soon as possible, 
-                            so please forgive me if I don't respond immediately.
+                            {m["page.contact.reachMeTitleDesc2"]()}
                         </p>
                     </div>
                     
@@ -79,12 +76,12 @@ function Contact() {
 
                         <div className="form-control">
                             {/* subject */}
-                            <input type="text" placeholder="Subject" className="input input-bordered focus:outline-emerald-400" value={subject} onChange={e => setSubject(e.target.value)} name="subject"/>
+                            <input type="text" placeholder={m["page.contact.formSubject"]()} className="input input-bordered focus:outline-emerald-400" value={subject} onChange={e => setSubject(e.target.value)} name="subject"/>
                         </div>
 
                         <div className="form-control">
                             {/** content */}
-                            <textarea type="text" placeholder="Enter your message here..." className="input input-bordered focus:outline-emerald-400 h-24" value={body} onChange={e => setBody(e.target.value)} name="message"></textarea>
+                            <textarea type="text" placeholder={m["page.contact.formContent"]()} className="input input-bordered focus:outline-emerald-400 h-24" value={body} onChange={e => setBody(e.target.value)} name="message"></textarea>
                         </div>
                         <span className={body.length > 10?"hidden":"text-end"}>
                                 {body.length}/10 min

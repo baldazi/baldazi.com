@@ -43,6 +43,14 @@
       "educationCPGE": "Prepa MPSI/MP - INPHB - Yamoussokro(Ivory Cost)",
       "educationBsc": "Licence - Informatique - USMB(Université Savoie Mont-Blanc)",
       "educationMsc": "MSc - Informatique - ULHN(Université Le Havre Normandie)"
+    },
+
+    "contact":{
+      "reachMeTitle": "Envoyer moi un message!",
+      "reachMeTitleDesc1": "Si vous souhaitez me contacter pour une raison quelconque, que ce soit pour discuter de collaborations ou simplement pour me dire bonjour, n’hésitez pas à m’envoyer un message à l’adresse e-mail suivante",
+      "reachMeTitleDesc2": "ou utilisez le formulaire de contact ci-dessous. J’essaie de répondre à tous les messages dès que possible, alors veuillez m’excuser si je ne réponds pas immédiatement.",
+      "formSubject": "Object",
+      "formContent": "Entrer votre message ici..."
     }
 	}
 }

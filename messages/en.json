@@ -42,6 +42,14 @@
       "educationCPGE": "Prepa MPSI/MP - INPHB - Yamoussokro(Ivory Cost)",
       "educationBsc": "BSc - Computer Sc - USMB - Savoie(France)",
       "educationMsc": "MSc - Computer Sc - ULHN - Le Havre(France)"
+    },
+
+    "contact":{
+      "reachMeTitle": "Send me a message!",
+      "reachMeTitleDesc1": "If you would like to contact me for any reason, whether to discuss collaborations or just to say hello, don't hesitate to send me a message at the following e-mail address",
+      "reachMeTitleDesc2": "or use the contact form below. I try to answer all messages as soon as possible, so please forgive me if I don't respond immediately.",
+      "formSubject": "Subject",
+      "formContent": "Enter your message here..."
     }
   }
 }
