@@ -1,6 +1,6 @@
 {
   "$schema": "https://inlang.com/schema/project-settings",
-  "baseLocale": "fr",
+  "baseLocale": "en",
   "locales": [
     "en",
     "fr"
