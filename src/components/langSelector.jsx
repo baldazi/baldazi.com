@@ -4,7 +4,8 @@ import { setLocale, locales, getLocale } from "../paraglide/runtime.js";
 export default function LangSelector(){
     const [lang, SetLang] = useState(getLocale())
     return (
-        <select value={lang} className="select bg-transparent border-0 focus:outline-none" onChange={e => {
+        <div className="">
+            <select value={lang} className="select bg-transparent shadow-none border-0 !outline-none !rounded-none cursor-pointer" onChange={e => {
             SetLang(e.target.value);
             setLocale(e.target.value);
             console.log(e.value.target.value);
@@ -15,5 +16,6 @@ export default function LangSelector(){
                 ))
             }
         </select>
+        </div>
     )
 }
