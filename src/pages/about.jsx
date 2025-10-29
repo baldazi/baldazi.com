@@ -5,7 +5,7 @@ import Collapse from '../components/collapse';
 function About() {
     return (
         <div className="min-h-screen flex flex-col justify-center items-center gap-10 py-10">
-            <div className="w-3/5 flex p-3 ">
+            <div className="flex flex-col md:w-3/5 md:flex-row p-3">
                 <div>
                     <BiUser size={200} />
                 </div>

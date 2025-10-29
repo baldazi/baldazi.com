@@ -5,7 +5,7 @@ export default function LangSelector(){
     const [lang, SetLang] = useState(getLocale())
     return (
         <div className="">
-            <select value={lang} className="select bg-transparent shadow-none border-0 !outline-none !rounded-none cursor-pointer" onChange={e => {
+            <select value={lang} className="select bg-emerald-700/50 dark:bg-emerald-900/50 shadow-none border-0 !outline-none !rounded-none cursor-pointer" onChange={e => {
             SetLang(e.target.value);
             setLocale(e.target.value);
             console.log(e.value.target.value);
