@@ -33,9 +33,9 @@ function About() {
             <AboutCard
                 title={m["page.about.educationTitle"]()}
                 content={[
-                    { title: "2018 - 2020", content: m["page.about.educationCPGE"]() },
+                    { title: "2023 - 2025", content: m["page.about.educationMsc"]() },
                     { title: "2020 - 2023", content: m["page.about.educationBsc"]() },
-                    { title: "2024 - 2025", content: m["page.about.educationMsc"]() },
+                    { title: "2018 - 2020", content: m["page.about.educationCPGE"]() },
                 ]}
             />
 
@@ -43,10 +43,10 @@ function About() {
             <AboutCard
                 title={m["page.about.skillsTitle"]()}
                 content={[
-                    { title: "Web", content: "Node.js, React/Next, Svelte/Sveltekit, ApiPlateform, " },
+                    { title: "Web", content: "Node.js, React/Next, Svelte/Sveltekit, ApiPlateform, fastapi, go/gin" },
                     { title: "Mobile", content: "Native Kotlin, jetpack compose, .net-Maui" },
                     { title: "Systeme & Network", content: "Linux, TCP/IP" },
-                    { title: "Others", content: "Git & Github, Docker" }
+                    { title: "Others", content: "Git & Github, Docker, vps management" }
                 ]}
             />
         </div>

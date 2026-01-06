@@ -1,8 +1,7 @@
-import React from 'react';
 import { ProjectCard } from '../components';
 import conflistikImg from '../assets/img/conflistik.png';
 import stageImg from '../assets/img/stage.png';
-import networkImg from '../assets/img/network.png';
+import calendarProjectImg from '../assets/img/calendarProject.png';
 import { m } from '../paraglide/messages';
 function Projet() {
     return (
@@ -12,13 +11,18 @@ function Projet() {
                 <div className="divider divider-primary divider-center md:w-[50%] mx-auto"><span className="badge badge-lg badge-primary">{m["page.project.mobileGroup"]()}</span></div>
                 <div className="flex gap-5 justify-center">
                     {/* conflistik card */}
-                    <ProjectCard title="Conflistik"
+                    <ProjectCard
+                        title="Conflistik"
                         description={m["page.project.conflisticDesc"]()}
-                        image={conflistikImg} />
+                        image={conflistikImg}
+                    />
                     {/* stage card */}
-                    <ProjectCard title={m["page.project.internshipTitle"]()}
+                    <ProjectCard
+                        title={m["page.project.internshipTitle"]()}
                         description={m["page.project.internshipMobileDesc"]()}
-                        image={stageImg} />
+                        image={stageImg}
+                        repositoryLink="https://github.com/baldazi/appMobileStage"
+                    />
                 </div>
 
                 {/* Website */}
@@ -27,18 +31,17 @@ function Projet() {
                     {/* stage card */}
                     <ProjectCard title={m["page.project.internshipTitle"]()}
                         description={m["page.project.internshipWebAppDesc"]()}
-                        image={stageImg} />
+                        image={stageImg}
+                        repositoryLink="https://github.com/tobina237/projetWebCesi/tree/master"
+                    />
+                    {/* calendar card */}
+                    <ProjectCard title={m["page.project.calendarTitle"]()}
+                        description={m["page.project.calendarDesc"]()}
+                        image={calendarProjectImg}
+                        repositoryLink="https://github.com/baldazi/TPE"
+                        demoLink="https://drive.google.com/file/d/1M64TxwiTkocrpaLWaHi0ZNA3h1eu0XLM/view?usp=sharing"
+                    />
                 </div>
-
-                {/* other */}
-                {/* <div className="divider divider-accent divider-center md:w-[50%] mx-auto"><span className="badge badge-lg badge-accent">Others</span></div>
-                <div className="flex gap-5 justify-center">
-                    <ProjectCard title="Interconnect Project"
-                        description="Currently, I am working on a project to experiment with the operation of networking services such as HTTP/HTTPS, 
-                        FTP, SSH, Samba, and DNS. Each day, I am learning about server configurations using two mini PCs at home,
-                        one running Ubuntu Server and the other operating on DragonFlyBSD."
-                        image={networkImg} />
-                </div> */}
             </div>
 
 

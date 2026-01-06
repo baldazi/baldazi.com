@@ -1,36 +1,34 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "greeting": "Salut {username}",
-
-  "navigation":{
+  "navigation": {
     "home": "Accueil",
     "project": "Poject",
     "about": "À propos",
     "contact": "Contact"
   },
-
   "page": {
-		"home" : {
+    "home": {
       "hooray": "Hourra !",
       "aboutFrame1": " Bonjour, Je suis ",
-      "aboutFrame2" : " et je suis ",
-      "aboutFrame3" : " diplômé d’un Master en Informatique ",
-      "aboutFrame4" : " à l’",
+      "aboutFrame2": " et je suis ",
+      "aboutFrame3": " diplômé d’un Master en Informatique ",
+      "aboutFrame4": " à l’",
       "aboutFrame5": " Université Le Havre Normandie (ULHN) ",
       "aboutFrame6": "Ma passion pour l'informatique découle de ma conviction que les technologies numériques ne cessent de transformer notre manière de vivre, de travailler et de communiquer. C’est pour ça que j’ai choisi d’en faire mon métier, pour participer à cette transformation.",
       "aboutFrame7": "Sur ce site, je partagerai les projets sur lesquels je travaille pendant mon temps libre, ainsi que ceux réalisés dans le cadre de mes études.",
       "resume": "Mon CV",
       "portfolio": "Portfolio"
-		},
-
-    "project":{
+    },
+    "project": {
       "mobileGroup": "Application Mobile",
       "conflisticDesc": "Ce projet consistait à développer une application mobile, plus précisément un jeu sérieux, basé sur la construction d’entrepôts dans une ville. Les participants devaient voter pour les emplacements des entrepôts, en défendant leurs intérêts selon la position dans la ville. L’application prenait en charge un système multi-utilisateur, où chaque personne jouait sur son propre appareil.",
       "internshipTitle": "Recherche de Stage",
-      "internshipMobileDesc" : "Cette application mobile développée en collaboration vise à faciliter le processus de candidature aux offres de stage. Elle consomme une API REST développée et déployée sur Heroku, permettant aux utilisateurs de rechercher et de postuler à des annonces de stage. Son objectif est de simplifier la recherche et la candidature aux stages.",
-      "internshipWebAppDesc": "L’application web, imposée par l’école, a inspiré la version mobile même si les deux n’ont pas été développées ensemble. Elle permet de rechercher et de postuler à des offres de stage en ligne. Elle propose une interface simple pour filtrer les annonces, gérer son profil et accéder à des ressources utiles pour les candidats."
+      "internshipMobileDesc": "Cette application mobile développée en collaboration vise à faciliter le processus de candidature aux offres de stage. Elle consomme une API REST développée et déployée sur Heroku, permettant aux utilisateurs de rechercher et de postuler à des annonces de stage. Son objectif est de simplifier la recherche et la candidature aux stages.",
+      "internshipWebAppDesc": "L’application web, imposée par l’école, a inspiré la version mobile même si les deux n’ont pas été développées ensemble. Elle permet de rechercher et de postuler à des offres de stage en ligne. Elle propose une interface simple pour filtrer les annonces, gérer son profil et accéder à des ressources utiles pour les candidats.",
+      "calendarTitle": "Agrégateur d'Événements",
+      "calendarDesc": "Ce projet consistait à concevoir une solution permettant de centraliser des événements provenant de diverses sources, notamment via des fichiers au format ICS ou des liens URL, afin de faciliter la gestion d'agendas. Le système permet d'automatiser la création et l'envoi de newsletters pour tenir les utilisateurs informés, tout en assurant une synchronisation efficace des dates et des rendez-vous."
     },
-
     "about": {
       "bioFrame1": "Je suis ",
       "bioFrame2": ", développeur passionné par la conception de logiciels fiables, performants et bien structurés. Ce qui me motive, c’est de comprendre en profondeur comment les systèmes fonctionnent et de transformer cette compréhension en solutions simples, efficaces et durables.",
@@ -45,13 +43,12 @@
       "educationBsc": "Licence - Informatique - USMB(Université Savoie Mont-Blanc)",
       "educationMsc": "Master - Informatique - ULHN(Université Le Havre Normandie)"
     },
-
-    "contact":{
+    "contact": {
       "reachMeTitle": "Envoyer moi un message!",
       "reachMeTitleDesc1": "Si vous souhaitez me contacter pour une raison quelconque, que ce soit pour discuter de collaborations ou simplement pour me dire bonjour, n’hésitez pas à m’envoyer un message à l’adresse e-mail suivante",
       "reachMeTitleDesc2": "ou utilisez le formulaire de contact ci-dessous. J’essaie de répondre à tous les messages dès que possible, alors veuillez m’excuser si je ne réponds pas immédiatement.",
       "formSubject": "Object",
       "formContent": "Entrer votre message ici..."
     }
-	}
+  }
 }
