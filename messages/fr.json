@@ -19,7 +19,8 @@
       "aboutFrame5": " Université Le Havre Normandie (ULHN) ",
       "aboutFrame6": "Ma passion pour l'informatique découle de ma conviction que les technologies numériques ne cessent de transformer notre manière de vivre, de travailler et de communiquer. C’est pour ça que j’ai choisi d’en faire mon métier, pour participer à cette transformation.",
       "aboutFrame7": "Sur ce site, je partagerai les projets sur lesquels je travaille pendant mon temps libre, ainsi que ceux réalisés dans le cadre de mes études.",
-      "resume": "Mon CV"
+      "resume": "Mon CV",
+      "portfolio": "Portfolio"
 		},
 
     "project":{
@@ -42,7 +43,7 @@
       "skillsTitle": "Competences",
       "educationCPGE": "Prepa MPSI/MP - INPHB - Yamoussokro(Ivory Cost)",
       "educationBsc": "Licence - Informatique - USMB(Université Savoie Mont-Blanc)",
-      "educationMsc": "MSc - Informatique - ULHN(Université Le Havre Normandie)"
+      "educationMsc": "Master - Informatique - ULHN(Université Le Havre Normandie)"
     },
 
     "contact":{

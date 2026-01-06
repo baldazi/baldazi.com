@@ -10,7 +10,7 @@ function Footer() {
                 <li className="hover:text-white hover:scale-110"><a href="https://github.com/baldazi" target="_blank" rel="noreferrer"><BsGithub size={24}/></a></li>
             </ul>
         </div>
-        <p className="text-center text-gray-100 font-medium ">&copy; baldazi.com 2025</p>
+        <p className="text-center text-gray-100 font-medium ">&copy; baldazi.com 2026</p>
       </footer>
     );
 }
