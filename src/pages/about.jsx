@@ -2,12 +2,14 @@ import { BiUser } from 'react-icons/bi';
 import { AboutCard } from '../components';
 import { m } from '../paraglide/messages';
 import Collapse from '../components/collapse';
+import profilImg from '../assets/img/profil_img.png';
+
 function About() {
     return (
         <div className="min-h-screen flex flex-col justify-center items-center gap-10 py-10">
-            <div className="flex flex-col md:w-3/5 md:flex-row p-3">
-                <div>
-                    <BiUser size={200} />
+            <div className="flex flex-col items-center md:w-3/5 md:flex-row p-3">
+                <div className="rounded-xl overflow-hidden shadow h- w-72">
+                    <img src={profilImg} alt="profil" className="object-cover"/>
                 </div>
                 <div className="p-3 text-2xl leading-loose text-center">
                     <p>
